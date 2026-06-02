@@ -79,3 +79,40 @@ td{
     text-align:center;
     border:1px solid #ddd;
 }
+
+button{
+    display:block;
+    margin:20px auto 0;
+    padding:12px 25px;
+    background:#0f2344;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.vonal{
+    border: none;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+#narancs{
+    background:#e66a00;
+}
+
+#zold{
+    background:#63a832;
+}
+
+.forras{
+    color:#0f2344;
+    font-weight:bold;
+}
+
+.feketegomb{
+    background:black;
+}
