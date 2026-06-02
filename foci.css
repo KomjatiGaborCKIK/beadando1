@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#4caf50;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+}
+
+.hero{
+    height:550px;
+    background:url("images/hero.jpg") center/cover;
+    position:relative;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.hero-content{
+    position:absolute;
+    left:80px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:2;
+}
+
+.hero h1{
+    color:white;
+    font-size:70px;
+    line-height:1.1;
+}
+
+.hero span{
+    color:#69c23c;
+}
+
+.hero button{
+    margin-top:30px;
+    background:#69c23c;
+    border:none;
+    color:white;
+    padding:15px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.content{
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.features{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+}
+
+.features h2{
+    color:#4caf50;
+    margin-bottom:25px;
+}
+
+.feature{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:18px 0;
+    border-bottom:1px solid #ddd;
+}
+
+.feature i{
+    color:#4caf50;
+    font-size:28px;
+}
+
+.feature span{
+    width:180px;
+    font-weight:bold;
+}
+
+.player-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.leagues{
+    max-width:1200px;
+    margin:0 auto 40px;
+    background:linear-gradient(135deg,#0d2e12,#164d1f);
+    border-radius:12px;
+    padding:40px;
+    color:white;
+}
+
+.leagues h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.league-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+}
+
+.league{
+    text-align:center;
+}
+
+.league img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+    .content{
+        grid-template-columns:1fr;
+    }
+
+    .league-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+}
